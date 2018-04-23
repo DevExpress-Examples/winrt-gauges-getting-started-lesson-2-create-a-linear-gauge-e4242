@@ -1,0 +1,28 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LinearGaugeLesson"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Gauges="using:DevExpress.UI.Xaml.Gauges"
+    x:Class="LinearGaugeLesson.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+        <Gauges:LinearGauge Margin="20">
+            <Gauges:LinearGauge.Scales>
+                <Gauges:LinearScale StartValue="-100" EndValue="100" MajorIntervalCount="20" >
+                    <Gauges:LinearScale.Ranges>
+                        <Gauges:LinearScaleRange StartValue="-100" EndValue="0"/>
+                        <Gauges:LinearScaleRange StartValue="0" EndValue="100"/>
+                    </Gauges:LinearScale.Ranges>
+                    <Gauges:LinearScale.LevelBars>
+                        <Gauges:LinearScaleLevelBar Value="20" />
+                    </Gauges:LinearScale.LevelBars>
+                </Gauges:LinearScale>
+            </Gauges:LinearGauge.Scales>
+        </Gauges:LinearGauge>
+
+    </Grid>
+</Page>
